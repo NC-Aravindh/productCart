@@ -1,0 +1,91 @@
+#title {
+  font-size: 2em;
+}
+
+#first-container {
+  width: 68%;
+}
+
+#product-container {
+  flex-grow: 1;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  gap: 1.5em;
+}
+
+
+#card-para {
+  font-size: 0.8em;
+}
+
+#product-name{
+  margin: 0;
+    color: var(--Rose-900);
+    font-weight: 900;
+}
+
+.item-container {
+  display: flex;
+  flex-direction: column;
+  height: fit-content;
+  position: relative;
+  font-weight: 100;
+}
+
+#item-img {
+  width: 16em;
+  height: 16em;
+  border-radius: 6%;
+}
+
+.remove-item {
+  border: 0.1em solid var(--Rose-400);
+  border-radius: 50%;
+  padding: 0.1em;
+  cursor: pointer;
+  transition: border-color 1s;
+}
+
+.remove-item:hover {
+  border-color: var(--Rose-900);
+  stroke: var(--Rose-900);
+}
+
+.overlay {
+  position: fixed;
+  /* Sit on top of the page content */
+  display: none;
+  /* Hidden by default */
+  width: 100%;
+  /* Full width (cover the whole page) */
+  height: 100%;
+  /* Full height (cover the whole page) */
+  inset: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  /* Black background with opacity */
+  z-index: 2;
+  /* Specify a stack order in case you're using a different order for other elements */
+}
+
+
+@media(max-width:768px) {
+
+    #root1{
+      flex-direction: column;
+      width: fit-content;
+      padding:1em;
+    }
+    #first-container{
+      width: auto;
+    }
+
+    #order-confirm-container {
+      margin-top: 5em;
+      width: auto;
+    }
+  
+    .img-outline{
+      border: 0.2em solid var(--Red);
+    }
+}

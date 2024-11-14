@@ -1,0 +1,111 @@
+#category-name {
+    color: var(--Rose-400);
+    font-size: 0.9em;
+    margin-bottom: 0;
+    margin-top: 2em;
+    font-weight: 300;
+}
+
+#product-name {
+    margin: 0;
+    color: var(--Rose-900);
+}
+
+#product-price {
+    margin: 0.5em;
+    color: var(--Red);
+    margin-left: 0;
+}
+
+.addItem {
+    position: absolute;
+    top: 14em;
+    left: 4em;
+    border-radius: 3em;
+    border: 0.01em solid black;
+    display: flex;
+    gap: 0.5em;
+    width: 9.2em;
+}
+
+.addItem p {
+    margin: 0;
+    padding: 0 0.5em;
+}
+
+.addItem:hover{
+    color:var(--Red)
+}
+
+.itemAdded{
+    position: absolute;
+    top: 14em;
+    left: 4em;
+    background-color: var(--Red);
+    color: white;
+    display: flex;
+    border-radius: 3em;
+    justify-content: space-between;
+    width: 9.2em;
+    padding: 0.5em;
+}
+
+.itemAdded p {
+    margin: 0;
+    padding: 0 0.5em;
+}
+
+.decrement-icon{
+    width: 0.5em;
+    padding-left: 0.3em;
+    padding-right: 0.3em;
+    border: 1px solid white;
+    border-radius: 50%;
+    padding-top: 0.52em;
+    padding-bottom: 0.52em;
+}
+
+.increment-icon{
+    padding: 0.25em;
+    border: 1px solid white;
+    border-radius: 50%;
+}
+
+.increment-icon:hover{
+    background-color: white;
+    stroke: var(--Red);
+    stroke-width: 1px;
+}
+
+.decrement-icon:hover{
+    background-color: white;
+    stroke: var(--Red);
+    stroke-width: 1px;
+}
+
+@media (max-width:768px){
+
+    .increment-icon:hover{
+        background-color: initial;
+        stroke: initial;
+        stroke-width: initial;
+    }
+
+    /* Define the animation */
+@keyframes activeStyle {
+    0% {
+        background-color: white; /* Style to apply */
+        stroke: var(--Red);
+    }
+    100% { 
+        background-color: white; 
+        stroke: var(--Red); 
+    }
+}
+
+/* Apply the animation on active state */
+.delayed:active {
+    animation: activeStyle 1s ;
+}
+
+}
