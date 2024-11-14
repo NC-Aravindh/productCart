@@ -1,4 +1,3 @@
-import React  from 'react'
 import "./Cart.css"
 import  OrderConfirm  from '../OrderConfirm/OrderConfirm';
 import { useDispatch, useSelector } from 'react-redux';

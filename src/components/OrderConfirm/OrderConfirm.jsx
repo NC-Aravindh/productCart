@@ -1,4 +1,3 @@
-import React  from 'react'
 import './OrderConfirm.css'
 import { useDispatch, useSelector } from 'react-redux'
 import { startNewOrder } from '../../utils/cartSlice';

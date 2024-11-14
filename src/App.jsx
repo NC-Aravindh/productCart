@@ -1,4 +1,3 @@
-import React from 'react'
 import './App.css'
 import ProductContainer from './components/ProductContainer.jsx';
 import Cart from './components/Cart/Cart.jsx';

@@ -1,4 +1,3 @@
-import React from 'react'
 import '../App.css'
 import Button from './Button/Button';
 import {useSelector} from 'react-redux'
