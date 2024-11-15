@@ -1,6 +1,12 @@
 #empty-cart-img {
-    width: 8em;
-    height: 8em;
+    width: 7em;
+    height: 7em;
+    align-self: center;
+}
+
+#cart-para{
+    color: var(--Rose-500);
+    align-self: center;
 }
 
 #cart-container {
@@ -13,7 +19,6 @@
     flex-direction: column;
     background-color: white;
     font-weight: 100;
-
 }
 
 #cart-title {
@@ -43,7 +48,6 @@
 
 #cart-prod-rate{
     color: var(--Rose-300);
-
 }
 
 #prod-count{
