@@ -4,8 +4,6 @@
     inset: 0;
     margin-top: 18em;
     margin-left: 25em;
-    opacity: 1;
-    flex-grow: 1;
     min-height: 15em;
     max-height: fit-content;
     border-radius: 1em;
@@ -83,6 +81,7 @@
 
     #order-confirm-container {
         margin-top: 5em;
+        margin-left: 0;
         width: auto;
     }
 
@@ -97,5 +96,6 @@
     #order-confirm-container {
         margin-top: 5em;
         width: 25em;
+        margin-left: 5em;
     }
 }

@@ -36,7 +36,6 @@ export const cartSlice = createSlice({
         },
 
         calculateCartTotal: (state) => {
-            console.log("cartTotal")
             let totalAmount = 0;
             state.cartList?.map((item) => totalAmount += item.price * item.productCount)
             state.cartTotal = totalAmount;
@@ -44,7 +43,6 @@ export const cartSlice = createSlice({
 
         removeItem: (state, action) => {
             const itemId = action.payload;
-            console.log(typeof (itemId))
             //If there is only one item in the cart.
             if (state.itemCount == 1) {
                 state.isEmpty = true;

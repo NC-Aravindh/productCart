@@ -90,6 +90,11 @@
         stroke: initial;
         stroke-width: initial;
     }
+    .decrement-icon:hover{
+        background-color: initial;
+        stroke: initial;
+        stroke-width: initial;
+    }
 
     /* Define the animation */
 @keyframes activeStyle {
